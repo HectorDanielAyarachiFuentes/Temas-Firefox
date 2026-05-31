@@ -1,0 +1,45 @@
+{
+  "manifest_version": 2,
+  "version": "1.0",
+  "name": "Breaking Bad Theme",
+  "description": "A tribute to one of the best series in the world. Theme based on the original logo.",
+  "author": "Hector Daniel Ayarachi Fuentes",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "breakingbad-theme@hector.ayarachi"
+    }
+  },
+  "theme": {
+    "images": {
+      "theme_frame": "empty.svg",
+      "additional_backgrounds": [ "bb_animado.svg" ]
+    },
+    "properties": {
+      "additional_backgrounds_alignment": [ "center" ],
+      "additional_backgrounds_tiling": [ "no-repeat" ]
+    },
+    "colors": {
+      "frame": "#111c09",
+      "tab_background_text": "#a1a1a6",
+      "toolbar": "transparent",
+      "bookmark_text": "#e5e5ea",
+      "toolbar_field": "rgba(0, 0, 0, 0.25)",
+      "toolbar_field_text": "#ffffff",
+      "toolbar_field_border": "rgba(92, 190, 115, 0.2)",
+      "toolbar_field_focus": "rgba(19, 32, 11, 0.7)",
+      "toolbar_field_text_focus": "#ffffff",
+      "toolbar_field_border_focus": "#5cbe73",
+      "tab_line": "#5cbe73",
+      "tab_selected": "transparent",
+      "tab_text": "#ffffff",
+      "tab_background_separator": "rgba(92, 190, 115, 0.3)",
+      "toolbar_top_separator": "transparent",
+      "toolbar_bottom_separator": "rgba(92, 190, 115, 0.4)",
+      "popup": "#0f1a08",
+      "popup_text": "#e5e5ea",
+      "popup_border": "rgba(92, 190, 115, 0.5)",
+      "ntp_background": "#111c09",
+      "ntp_text": "#e5e5ea"
+    }
+  }
+}
