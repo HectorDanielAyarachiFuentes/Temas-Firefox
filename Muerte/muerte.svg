@@ -215,7 +215,7 @@
  
   <!-- Nested fixed-width SVG to position the designer & desk relative to the right edge and fix the arm transform-origin -->
   <svg x="100%" y="0" width="581" height="125" style="overflow: visible;">
-    <g transform="translate(-581, 47)">
+    <g transform="translate(-581, 15)">
       <g id="fire">
         <rect id="mask-fire-black" x="511" y="41" width="38" height="34"/>
         <g>
