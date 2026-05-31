@@ -12,7 +12,7 @@
   "theme": {
     "images": {
       "theme_frame": "empty.svg",
-      "additional_backgrounds": [ "bb_animado.svg" ]
+      "additional_backgrounds": [ "bb_final.svg" ]
     },
     "properties": {
       "additional_backgrounds_alignment": [ "center" ],
