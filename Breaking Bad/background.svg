@@ -1,0 +1,142 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 200" width="1920" height="200" preserveAspectRatio="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#0a1205" />
+      <stop offset="50%" stop-color="#142b08" />
+      <stop offset="100%" stop-color="#0a1205" />
+    </linearGradient>
+    <linearGradient id="gradBr" x1="100%" y1="100%" x2="0%" y2="0%">
+      <stop offset="1%" stop-color="#5cbe73" />
+      <stop offset="100%" stop-color="#182b04" />
+    </linearGradient>
+    <radialGradient id="smokeL" cx="30%" cy="100%" r="60%">
+      <stop offset="0%" stop-color="#00CCDD" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#00CCDD" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="smokeR" cx="70%" cy="100%" r="60%">
+      <stop offset="0%" stop-color="#00CCDD" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#00CCDD" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="smokeC" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00EEFF" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#00EEFF" stop-opacity="0" />
+    </radialGradient>
+    <radialGradient id="pGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.9" />
+      <stop offset="40%" stop-color="#a7f2f9" stop-opacity="0.5" />
+      <stop offset="100%" stop-color="#a7f2f9" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <style>
+    .p { animation: float 8s ease-in-out infinite alternate; }
+    .p:nth-child(2n) { animation-duration: 12s; animation-delay: -3s; }
+    .p:nth-child(3n) { animation-duration: 10s; animation-delay: -5s; }
+    .p:nth-child(5n) { animation-duration: 14s; animation-delay: -7s; }
+    @keyframes float {
+      0% { transform: translateY(0px); opacity: 0.5; }
+      50% { opacity: 1; }
+      100% { transform: translateY(-15px); opacity: 0.6; }
+    }
+    .smoke { animation: drift 20s ease-in-out infinite alternate; }
+    .smoke:nth-child(2n) { animation-duration: 25s; animation-delay: -8s; }
+    @keyframes drift {
+      0% { transform: translateX(0) scale(1); opacity: 0.6; }
+      100% { transform: translateX(30px) scale(1.1); opacity: 0.9; }
+    }
+  </style>
+
+  <!-- Background -->
+  <rect width="1920" height="200" fill="url(#bgGrad)" />
+
+  <!-- Smoke wisps -->
+  <ellipse class="smoke" cx="300" cy="180" rx="400" ry="120" fill="url(#smokeL)" />
+  <ellipse class="smoke" cx="1600" cy="180" rx="400" ry="120" fill="url(#smokeR)" />
+  <ellipse class="smoke" cx="960" cy="100" rx="600" ry="100" fill="url(#smokeC)" />
+  <ellipse class="smoke" cx="600" cy="160" rx="350" ry="90" fill="url(#smokeL)" />
+  <ellipse class="smoke" cx="1300" cy="160" rx="350" ry="90" fill="url(#smokeR)" />
+
+  <!-- ===== LOGO: Br ===== -->
+  <!-- Br box -->
+  <rect x="775" y="60" width="75" height="75" fill="url(#gradBr)" stroke="#DDFFE2" stroke-width="1.5" />
+  <!-- Br text approximated with paths -->
+  <g fill="#fafffb">
+    <!-- B -->
+    <path d="M790 117 L790 85 L800 85 Q806 85 806 91 Q806 96 801 97 Q807 98 807 104 Q807 110 800 110 L790 110 Z M794 88 L794 95 L799 95 Q803 95 803 91.5 Q803 88 799 88 Z M794 98 L794 107 L800 107 Q804 107 804 102.5 Q804 98 800 98 Z"/>
+    <!-- r -->
+    <path d="M810 110 L810 95 L813 95 L813 98 Q815 95 819 95 L819 98 Q814 98 813 101 L813 110 Z"/>
+  </g>
+  <!-- Br small details -->
+  <g fill="#f4f7f5" opacity="0.8">
+    <!-- 79.904 top-left -->
+    <rect x="778" y="63" width="18" height="3" rx="1" fill="#f4f7f5" opacity="0.5" />
+    <!-- 35 bottom-left -->
+    <rect x="778" y="125" width="8" height="4" rx="1" fill="#f4f7f5" opacity="0.5" />
+  </g>
+
+  <!-- ===== eaking (white script between Br and Ba) ===== -->
+  <g transform="translate(855, 80)" fill="#fff">
+    <!-- e -->
+    <path d="M5 18 Q5 10 12 10 Q19 10 19 17 L7 17 Q7.5 22 13 22 Q17 22 18 19 L19.5 21 Q17 25 12 25 Q5 25 5 18 Z M7 15 L17 15 Q16.5 12 12 12 Q8 12 7 15 Z"/>
+    <!-- a -->
+    <path d="M23 25 L23 20 Q21 25 26 25 Q32 25 32 18 Q32 10 26 10 Q22 10 23 14 L23 10 L25 10 L25 14 Q27 10 30 13 Q32 16 32 18 Q32 25 26 25 Q23 25 23 25 Z M25 18 Q25 22 28 22 Q31 22 31 18 Q31 13 28 13 Q25 13 25 18 Z"/>
+    <!-- k -->
+    <path d="M36 25 L36 4 L38 4 L38 16 L45 10 L48 10 L42 16 L49 25 L46 25 L40 17 L38 19 L38 25 Z"/>
+    <!-- i -->
+    <path d="M52 7 Q51 7 51 5.5 Q51 4 52 4 Q53 4 53 5.5 Q53 7 52 7 Z M51 10 L53 10 L53 25 L51 25 Z"/>
+    <!-- n -->
+    <path d="M57 25 L57 10 L59 10 L59 13 Q61 10 65 10 Q69 10 69 15 L69 25 L67 25 L67 16 Q67 12 64 12 Q60 12 59 16 L59 25 Z"/>
+    <!-- g -->
+    <path d="M73 25 Q73 32 79 32 Q84 32 85 28 L83 27 Q82 30 79 30 Q75 30 75 25 L75 23 Q77 25 80 25 Q86 25 86 18 Q86 10 80 10 Q77 10 75 13 L75 10 L73 10 Z M75 18 Q75 13 79 13 Q83 13 83 18 Q83 23 79 23 Q75 23 75 18 Z"/>
+  </g>
+
+  <!-- ===== Ba box ===== -->
+  <rect x="1013" y="60" width="75" height="75" fill="url(#gradBr)" stroke="#DDFFE2" stroke-width="1.5" />
+  <!-- Ba text -->
+  <g fill="#fafffb">
+    <!-- B -->
+    <path d="M1028 117 L1028 85 L1038 85 Q1044 85 1044 91 Q1044 96 1039 97 Q1045 98 1045 104 Q1045 110 1038 110 L1028 110 Z M1032 88 L1032 95 L1037 95 Q1041 95 1041 91.5 Q1041 88 1037 88 Z M1032 98 L1032 107 L1038 107 Q1042 107 1042 102.5 Q1042 98 1038 98 Z"/>
+    <!-- a -->
+    <path d="M1050 110 L1050 105 Q1048 110 1053 110 Q1059 110 1059 103 Q1059 95 1053 95 Q1049 95 1050 99 L1050 95 L1052 95 L1052 99 Q1054 95 1057 98 Q1059 101 1059 103 Q1059 110 1053 110 Q1050 110 1050 110 Z M1052 103 Q1052 107 1055 107 Q1058 107 1058 103 Q1058 98 1055 98 Q1052 98 1052 103 Z"/>
+  </g>
+  <!-- Ba small details -->
+  <g fill="#f4f7f5" opacity="0.5">
+    <rect x="1016" y="63" width="18" height="3" rx="1" />
+    <rect x="1016" y="125" width="8" height="4" rx="1" />
+  </g>
+
+  <!-- ===== d ===== -->
+  <g transform="translate(1093, 80)" fill="#fff">
+    <path d="M12 25 Q6 25 6 18 Q6 10 12 10 Q15 10 16 13 L16 4 L18 4 L18 25 L16 25 L16 22 Q15 25 12 25 Z M8 18 Q8 23 12 23 Q16 23 16 18 Q16 13 12 13 Q8 13 8 18 Z"/>
+  </g>
+
+  <!-- FLOATING PARTICLES with CSS animation -->
+  <circle class="p" cx="120" cy="45" r="3" fill="url(#pGlow)" />
+  <circle class="p" cx="250" cy="130" r="4" fill="url(#pGlow)" />
+  <circle class="p" cx="380" cy="30" r="2.5" fill="url(#pGlow)" />
+  <circle class="p" cx="500" cy="160" r="3.5" fill="url(#pGlow)" />
+  <circle class="p" cx="680" cy="55" r="3" fill="url(#pGlow)" />
+  <circle class="p" cx="740" cy="170" r="2" fill="url(#pGlow)" />
+  <circle class="p" cx="900" cy="35" r="4" fill="url(#pGlow)" />
+  <circle class="p" cx="1050" cy="150" r="3" fill="url(#pGlow)" />
+  <circle class="p" cx="1180" cy="40" r="2.5" fill="url(#pGlow)" />
+  <circle class="p" cx="1300" cy="170" r="3.5" fill="url(#pGlow)" />
+  <circle class="p" cx="1420" cy="50" r="3" fill="url(#pGlow)" />
+  <circle class="p" cx="1550" cy="140" r="4" fill="url(#pGlow)" />
+  <circle class="p" cx="1680" cy="30" r="2" fill="url(#pGlow)" />
+  <circle class="p" cx="1800" cy="160" r="3.5" fill="url(#pGlow)" />
+
+  <!-- Tiny crystal dust -->
+  <circle class="p" cx="160" cy="90" r="1" fill="#a7f2f9" opacity="0.7" />
+  <circle class="p" cx="340" cy="110" r="1.2" fill="#a7f2f9" opacity="0.6" />
+  <circle class="p" cx="520" cy="70" r="1" fill="#a7f2f9" opacity="0.8" />
+  <circle class="p" cx="650" cy="140" r="1.5" fill="#a7f2f9" opacity="0.5" />
+  <circle class="p" cx="820" cy="80" r="1" fill="#a7f2f9" opacity="0.7" />
+  <circle class="p" cx="980" cy="50" r="1.3" fill="#a7f2f9" opacity="0.6" />
+  <circle class="p" cx="1120" cy="120" r="1" fill="#a7f2f9" opacity="0.8" />
+  <circle class="p" cx="1250" cy="60" r="1.5" fill="#a7f2f9" opacity="0.5" />
+  <circle class="p" cx="1450" cy="100" r="1" fill="#a7f2f9" opacity="0.7" />
+  <circle class="p" cx="1620" cy="80" r="1.2" fill="#a7f2f9" opacity="0.6" />
+  <circle class="p" cx="1750" cy="120" r="1" fill="#a7f2f9" opacity="0.8" />
+  <circle class="p" cx="1880" cy="50" r="1.5" fill="#a7f2f9" opacity="0.5" />
+</svg>
