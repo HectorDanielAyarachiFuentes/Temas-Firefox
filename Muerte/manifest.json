@@ -11,7 +11,12 @@
   },
   "theme": {
     "images": {
-      "theme_frame": "muerte.svg"
+      "theme_frame": "empty.svg",
+      "additional_backgrounds": [ "muerte.svg" ]
+    },
+    "properties": {
+      "additional_backgrounds_alignment": [ "right bottom" ],
+      "additional_backgrounds_tiling": [ "no-repeat" ]
     },
     "colors": {
       "frame": "#000000",
