@@ -27,7 +27,7 @@
   <g filter="url(#drop-shadow)">
     <g filter="url(#flag-wave)">
       <!-- text-anchor start and placed specifically at x=30 to ensure it is always on the left side of smaller screens. -->
-      <text x="30" y="60" text-anchor="start" font-family="'Palatino Linotype', 'Book Antiqua', 'Georgia', serif" font-size="34" font-weight="bold" letter-spacing="4" fill="url(#gold)" stroke="#3A2800" stroke-width="1.5">ARGENTINA</text>
+      <text x="30" y="112" text-anchor="start" font-family="'Palatino Linotype', 'Book Antiqua', 'Georgia', serif" font-size="34" font-weight="bold" letter-spacing="4" fill="url(#gold)" stroke="#3A2800" stroke-width="1.5">ARGENTINA</text>
     </g>
   </g>
 </svg>

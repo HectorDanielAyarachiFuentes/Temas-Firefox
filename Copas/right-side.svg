@@ -48,13 +48,13 @@
   <!-- TEXT placed safely, larger size, strictly in the top blue stripe -->
   <g filter="url(#drop-shadow)">
     <!-- ALL ON ONE LINE -->
-    <text x="440" y="24" text-anchor="end" font-family="'Palatino Linotype', 'Book Antiqua', 'Georgia', serif" font-size="22" font-weight="bold" letter-spacing="1.5" fill="url(#gold)" stroke="#3A2800" stroke-width="1">CAMPEONES DEL MUNDO</text>
+    <text x="440" y="105" text-anchor="end" font-family="'Palatino Linotype', 'Book Antiqua', 'Georgia', serif" font-size="22" font-weight="bold" letter-spacing="1.5" fill="url(#gold)" stroke="#3A2800" stroke-width="1">CAMPEONES DEL MUNDO</text>
   </g>
 
   <!-- CUPS GIANT: born in the lower blue stripe and reaching the top -->
   <g filter="url(#golden-glow)">
-    <use href="#world-cup" x="262" y="25" width="58" height="90" />
-    <use href="#world-cup" x="332" y="25" width="58" height="90" />
-    <use href="#world-cup" x="402" y="25" width="58" height="90" />
+    <use href="#world-cup" x="262" y="55" width="58" height="90" />
+    <use href="#world-cup" x="332" y="55" width="58" height="90" />
+    <use href="#world-cup" x="402" y="55" width="58" height="90" />
   </g>
 </svg>

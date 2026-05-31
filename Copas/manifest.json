@@ -15,7 +15,7 @@
       "additional_backgrounds": ["argentina-text.svg", "right-side.svg", "bandera.svg"]
     },
     "properties": {
-      "additional_backgrounds_alignment": ["left top", "right top", "center top"],
+      "additional_backgrounds_alignment": ["left center", "right center", "center center"],
       "additional_backgrounds_tiling": ["no-repeat", "no-repeat", "no-repeat"]
     },
     "colors": {
