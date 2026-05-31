@@ -1,8 +1,14 @@
 {
   "manifest_version": 2,
   "version": "1.0",
-  "name": "Tema Barra SVG",
-  "description": "Un hermoso tema usando tu SVG como fondo de barra.",
+  "name": "Olas Fluidas SVG",
+  "description": "Un tema premium y moderno con hermosas olas vectoriales animadas en la barra.",
+  "author": "Hector Daniel Ayarachi Fuentes",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "olasfluidas-v1@hector.ayarachi"
+    }
+  },
   "theme": {
     "images": {
       "theme_frame": "empty.svg",
@@ -13,13 +19,27 @@
       "additional_backgrounds_tiling": [ "repeat-x" ]
     },
     "colors": {
-      "frame": "#1a1a24",
-      "tab_background_text": "#ffffff",
+      "frame": "#080b18",
+      "tab_background_text": "#a1a1a6",
       "toolbar": "transparent",
-      "toolbar_field": "rgba(0, 0, 0, 0.4)",
+      "bookmark_text": "#e5e5ea",
+      "toolbar_field": "rgba(0, 0, 0, 0.25)",
       "toolbar_field_text": "#ffffff",
-      "toolbar_text": "#ffffff",
-      "bookmark_text": "#ffffff"
+      "toolbar_field_border": "rgba(34, 221, 138, 0.2)",
+      "toolbar_field_focus": "rgba(8, 11, 24, 0.7)",
+      "toolbar_field_text_focus": "#ffffff",
+      "toolbar_field_border_focus": "#22dd8a",
+      "tab_line": "#22dd8a",
+      "tab_selected": "transparent",
+      "tab_text": "#ffffff",
+      "tab_background_separator": "rgba(23, 66, 255, 0.3)",
+      "toolbar_top_separator": "transparent",
+      "toolbar_bottom_separator": "rgba(23, 66, 255, 0.4)",
+      "popup": "#0a1128",
+      "popup_text": "#e5e5ea",
+      "popup_border": "rgba(34, 221, 138, 0.5)",
+      "ntp_background": "#080b18",
+      "ntp_text": "#e5e5ea"
     }
   }
 }
