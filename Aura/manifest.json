@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "version": "1.0",
+  "name": "Aura Boreal",
+  "description": "Un tema oscuro con un hermoso efecto de aura boreal animada en la barra superior.",
+  "author": "Hector Daniel Ayarachi Fuentes",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "auraboreal-v2@hector.ayarachi"
+    }
+  },
+  "theme": {
+    "images": {
+      "theme_frame": "aura.svg"
+    },
+    "colors": {
+      "frame": "#1c1c1e",
+      "tab_background_text": "#a1a1a6",
+      "toolbar": "#2c2c2e",
+      "bookmark_text": "#e5e5ea",
+      "toolbar_field": "#3a3a3c",
+      "toolbar_field_text": "#ffffff",
+      "tab_line": "#4a90e2"
+    }
+  }
+}

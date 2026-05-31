@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+  "version": "1.1",
+  "name": "Argentina Banner",
+  "description": "Un tema con banner de Argentina para Firefox.",
+  "author": "Hector Daniel Ayarachi Fuentes",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "argentina-banner@hector.ayarachi"
+    }
+  },
+  "theme": {
+    "images": {
+      "theme_frame": "empty.svg",
+      "additional_backgrounds": ["bandera.svg"]
+    },
+    "properties": {
+      "additional_backgrounds_alignment": ["center top"],
+      "additional_backgrounds_tiling": ["no-repeat"]
+    },
+    "colors": {
+      "frame": "#1c1c1e",
+      "tab_background_text": "#1c1c1e",
+      "toolbar": "transparent",
+      "toolbar_text": "#1c1c1e",
+      "bookmark_text": "#1c1c1e",
+      "toolbar_field": "rgba(0, 0, 0, 0.6)",
+      "toolbar_field_text": "#ffffff",
+      "tab_line": "#F6B40E"
+    }
+  }
+}

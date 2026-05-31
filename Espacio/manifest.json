@@ -1,0 +1,40 @@
+{
+  "manifest_version": 2,
+  "version": "1.0",
+  "name": "Viaje Espacial",
+  "description": "Un tema oscuro con un espectacular fondo del espacio en movimiento.",
+  "author": "Hector Daniel Ayarachi Fuentes",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "viajeespacial-v1@hector.ayarachi"
+    }
+  },
+  "theme": {
+    "images": {
+      "theme_frame": "space.svg"
+    },
+    "colors": {
+      "frame": "#050510",
+      "tab_background_text": "#a1a1a6",
+      "toolbar": "transparent",
+      "bookmark_text": "#e5e5ea",
+      "toolbar_field": "rgba(0, 0, 0, 0.15)",
+      "toolbar_field_text": "#ffffff",
+      "toolbar_field_border": "rgba(255, 255, 255, 0.1)",
+      "toolbar_field_focus": "rgba(0, 0, 0, 0.3)",
+      "toolbar_field_text_focus": "#ffffff",
+      "toolbar_field_border_focus": "#b968c7",
+      "tab_line": "#b968c7",
+      "tab_selected": "transparent",
+      "tab_text": "#ffffff",
+      "tab_background_separator": "rgba(155, 89, 182, 0.3)",
+      "toolbar_top_separator": "transparent",
+      "toolbar_bottom_separator": "rgba(155, 89, 182, 0.4)",
+      "popup": "#080812",
+      "popup_text": "#e5e5ea",
+      "popup_border": "rgba(155, 89, 182, 0.5)",
+      "ntp_background": "#050510",
+      "ntp_text": "#e5e5ea"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "version": "1.0.0",
+  "name": "Tema Infinito",
+  "description": "Un hermoso tema con fondo animado que se desplaza hacia el infinito.",
+  "author": "Ramoncito",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "infinito-theme@ramoncito.com",
+      "strict_min_version": "109.0"
+    }
+  },
+  "theme": {
+    "images": {
+      "theme_frame": "empty.svg",
+      "additional_backgrounds": [ "pattern_animado.png" ]
+    },
+    "properties": {
+      "additional_backgrounds_alignment": [ "left top" ],
+      "additional_backgrounds_tiling": [ "repeat" ]
+    },
+    "colors": {
+      "frame": "#ffffff",
+      "tab_background_text": "#111111",
+      "toolbar": "transparent",
+      "toolbar_field": "rgba(255, 255, 255, 0.5)",
+      "toolbar_field_text": "#000000",
+      "toolbar_text": "#000000",
+      "bookmark_text": "#111111",
+      "tab_line": "#00aaff"
+    }
+  }
+}

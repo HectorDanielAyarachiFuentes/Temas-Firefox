@@ -1,0 +1,33 @@
+{
+  "manifest_version": 3,
+  "version": "1.0",
+  "name": "Wall-E y la Tierra",
+  "description": "Tema de Wall-E mirando a la Tierra",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "walle-theme@ramoncito.com"
+    }
+  },
+  "theme": {
+    "images": {
+      "theme_frame": "walle.svg",
+      "additional_backgrounds": [ "tierra.svg" ]
+    },
+    "properties": {
+      "theme_frame_alignment": "right bottom",
+      "theme_frame_repeat": "no-repeat",
+      "additional_backgrounds_alignment": [ "left bottom" ],
+      "additional_backgrounds_tiling": [ "no-repeat" ]
+    },
+    "colors": {
+      "frame": "#1B2230",
+      "tab_background_text": "#ffffff",
+      "toolbar": "transparent",
+      "toolbar_field": "rgba(0, 0, 0, 0.3)",
+      "toolbar_field_text": "#ffffff",
+      "toolbar_text": "#ffffff",
+      "bookmark_text": "#ffffff",
+      "tab_line": "#f49123"
+    }
+  }
+}

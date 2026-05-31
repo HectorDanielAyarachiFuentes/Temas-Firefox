@@ -1,0 +1,271 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3000 400" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#05010a" />
+      <stop offset="25%" stop-color="#120524" />
+      <stop offset="50%" stop-color="#080314" />
+      <stop offset="75%" stop-color="#1a082a" />
+      <stop offset="100%" stop-color="#05010a" />
+    </linearGradient>
+
+    <radialGradient id="nebula-purple" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#9d4edd" stop-opacity="0.4"/>
+      <stop offset="50%" stop-color="#3c096c" stop-opacity="0.15"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="nebula-cyan" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00f5d4" stop-opacity="0.3"/>
+      <stop offset="50%" stop-color="#00bbf9" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="nebula-orange" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ff9e00" stop-opacity="0.25"/>
+      <stop offset="60%" stop-color="#ff6d00" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- The Sun / Giant Star (Sweet Spot) -->
+    <radialGradient id="sun-glow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ffeedd" stop-opacity="0.85"/>
+      <stop offset="12%" stop-color="#ffcc66" stop-opacity="0.6"/>
+      <stop offset="30%" stop-color="#ff6600" stop-opacity="0.35"/>
+      <stop offset="60%" stop-color="#991100" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- Blue Giant (Sweet Spot) -->
+    <radialGradient id="blue-giant" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#e6ffff" stop-opacity="0.8"/>
+      <stop offset="15%" stop-color="#66ccff" stop-opacity="0.5"/>
+      <stop offset="45%" stop-color="#005599" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0"/>
+    </radialGradient>
+
+    <linearGradient id="meteor-trail1" x1="100%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1" />
+      <stop offset="20%" stop-color="#ff9e00" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </linearGradient>
+    
+    <linearGradient id="meteor-trail2" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="1" />
+      <stop offset="20%" stop-color="#00f5d4" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#000000" stop-opacity="0" />
+    </linearGradient>
+
+    <style>
+      .star { fill: #ffffff; }
+      
+      /* ENTROPY ANIMATIONS */
+      .chaos-1 { animation: c1 25s ease-in-out infinite alternate; }
+      .chaos-2 { animation: c2 35s ease-in-out infinite alternate; }
+      .chaos-3 { animation: c3 18s ease-in-out infinite alternate; }
+      .chaos-4 { animation: c4 40s ease-in-out infinite alternate; }
+      
+      .orbit-1 { animation: o1 60s linear infinite; transform-origin: 1500px 100px; }
+      .orbit-2 { animation: o2 45s linear infinite; transform-origin: 1500px 100px; }
+      .orbit-3 { animation: o1 80s linear infinite; transform-origin: 800px 50px; }
+
+      .pulse { animation: pulse-anim 4s infinite alternate ease-in-out; }
+      .sun-pulse { animation: sun-pulse-anim 6s infinite alternate ease-in-out; transform-origin: center; }
+
+      /* CHAOS KEYFRAMES */
+      @keyframes c1 {
+        0% { transform: translate(0, 0) scale(1); }
+        25% { transform: translate(80px, -50px) scale(1.5); }
+        50% { transform: translate(-40px, -120px) scale(0.8); }
+        75% { transform: translate(-100px, 30px) scale(1.2); }
+        100% { transform: translate(50px, 80px) scale(1); }
+      }
+      @keyframes c2 {
+        0% { transform: translate(0, 0) rotate(0deg); }
+        33% { transform: translate(-150px, 80px) rotate(45deg); }
+        66% { transform: translate(120px, -60px) rotate(-30deg); }
+        100% { transform: translate(-50px, -90px) rotate(15deg); }
+      }
+      @keyframes c3 {
+        0% { transform: translate(0, 0) scale(1); }
+        50% { transform: translate(0px, 150px) scale(0.5); }
+        100% { transform: translate(0px, -150px) scale(1.8); }
+      }
+      @keyframes c4 {
+        0% { transform: translate(0, 0); }
+        20% { transform: translate(200px, 20px); }
+        40% { transform: translate(180px, -80px); }
+        60% { transform: translate(-150px, -10px); }
+        80% { transform: translate(-100px, 90px); }
+        100% { transform: translate(0, 0); }
+      }
+      
+      /* ORBIT KEYFRAMES */
+      @keyframes o1 {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      @keyframes o2 {
+        0% { transform: rotate(360deg); }
+        100% { transform: rotate(0deg); }
+      }
+
+      /* METEORS */
+      .meteor1 {
+        stroke: url(#meteor-trail1); stroke-width: 3; stroke-linecap: round;
+        animation: m1 7s linear infinite; opacity: 0;
+      }
+      .meteor2 {
+        stroke: url(#meteor-trail2); stroke-width: 2; stroke-linecap: round;
+        animation: m2 12s linear infinite; opacity: 0;
+      }
+      .meteor3 {
+        stroke: url(#meteor-trail1); stroke-width: 4; stroke-linecap: round;
+        animation: m3 15s linear infinite; opacity: 0;
+      }
+
+      @keyframes m1 {
+        0% { transform: translate(3000px, -200px); opacity: 0; }
+        5% { opacity: 1; }
+        15% { transform: translate(1500px, 800px); opacity: 0; }
+        100% { transform: translate(1500px, 800px); opacity: 0; }
+      }
+      @keyframes m2 {
+        0% { transform: translate(-200px, -100px); opacity: 0; }
+        2% { opacity: 1; }
+        10% { transform: translate(1800px, 900px); opacity: 0; }
+        100% { transform: translate(1800px, 900px); opacity: 0; }
+      }
+      @keyframes m3 {
+        0% { transform: translate(1500px, -300px); opacity: 0; }
+        3% { opacity: 1; }
+        12% { transform: translate(-500px, 1200px); opacity: 0; }
+        100% { transform: translate(-500px, 1200px); opacity: 0; }
+      }
+
+      @keyframes pulse-anim {
+        0% { transform: scale(0.95); opacity: 0.6; }
+        100% { transform: scale(1.1); opacity: 1; }
+      }
+      @keyframes sun-pulse-anim {
+        0% { transform: scale(0.95); opacity: 0.85; }
+        100% { transform: scale(1.05); opacity: 1; }
+      }
+    </style>
+  </defs>
+
+  <!-- Deep space background -->
+  <rect width="100%" height="100%" fill="url(#bg-grad)" />
+
+  <!-- Massive Nebulas with Chaos -->
+  <g class="chaos-4" opacity="0.8">
+    <ellipse cx="1500" cy="100" rx="1200" ry="500" fill="url(#nebula-purple)" />
+    <ellipse cx="750" cy="50" rx="900" ry="400" fill="url(#nebula-cyan)" />
+    <ellipse cx="2250" cy="150" rx="1000" ry="450" fill="url(#nebula-orange)" />
+  </g>
+  <g class="chaos-2" opacity="0.6">
+    <ellipse cx="400" cy="180" rx="800" ry="300" fill="url(#nebula-orange)" />
+    <ellipse cx="2600" cy="20" rx="800" ry="350" fill="url(#nebula-cyan)" />
+  </g>
+
+  <!-- THE SUN (Centered so it's always visible regardless of monitor width) -->
+  <circle cx="1500" cy="60" r="300" fill="url(#sun-glow)" class="sun-pulse" />
+  
+  <!-- Secondary Blue Giant (Centered-left) -->
+  <circle cx="900" cy="120" r="150" fill="url(#blue-giant)" class="sun-pulse" style="animation-delay: -3s;" />
+
+  <!-- Secondary Orange Dwarf (Centered-right) -->
+  <circle cx="2100" cy="30" r="100" fill="url(#sun-glow)" class="sun-pulse" style="animation-delay: -1s;" />
+
+  <!-- CHAOS PARTICLES (Floating everywhere) -->
+  <g class="chaos-1 star" opacity="0.9">
+    <circle cx="1400" cy="80" r="3" fill="#ffddcc" />
+    <circle cx="1600" cy="40" r="2" fill="#cceeff" />
+    <circle cx="1550" cy="120" r="4" fill="#ffffff" />
+    <circle cx="1450" cy="20" r="1.5" fill="#ffeebb" />
+    
+    <circle cx="800" cy="90" r="3" />
+    <circle cx="950" cy="150" r="2" />
+    <circle cx="2150" cy="70" r="4" fill="#ffddcc" />
+    <circle cx="2050" cy="160" r="2.5" />
+    <circle cx="500" cy="50" r="3" />
+    <circle cx="2500" cy="100" r="2" />
+    <circle cx="100" cy="150" r="3" />
+    <circle cx="2900" cy="40" r="2.5" />
+  </g>
+
+  <g class="chaos-2 star" opacity="0.7">
+    <circle cx="1300" cy="60" r="2" />
+    <circle cx="1700" cy="140" r="3" fill="#cceeff" />
+    <circle cx="1500" cy="180" r="1.5" />
+    <circle cx="1650" cy="30" r="2.5" fill="#ffddcc" />
+    
+    <circle cx="700" cy="120" r="2" />
+    <circle cx="1050" cy="40" r="3" />
+    <circle cx="2250" cy="140" r="1.5" />
+    <circle cx="1950" cy="50" r="2.5" fill="#cceeff" />
+    <circle cx="300" cy="100" r="2" />
+    <circle cx="2700" cy="60" r="3" />
+    <circle cx="200" cy="20" r="1.5" />
+    <circle cx="2800" cy="180" r="2" />
+  </g>
+
+  <g class="chaos-3 star" opacity="0.8">
+    <circle cx="1350" cy="150" r="1" />
+    <circle cx="1450" cy="90" r="1.5" />
+    <circle cx="1550" cy="60" r="2" fill="#ffeebb" />
+    <circle cx="1600" cy="160" r="1" />
+    
+    <circle cx="850" cy="20" r="2" />
+    <circle cx="1150" cy="180" r="1.5" />
+    <circle cx="2350" cy="90" r="1" />
+    <circle cx="1850" cy="120" r="2" />
+    <circle cx="600" cy="60" r="1" />
+    <circle cx="2400" cy="150" r="1.5" />
+    <circle cx="400" cy="30" r="2" />
+    <circle cx="2600" cy="110" r="1" />
+  </g>
+
+  <!-- ORBITING PARTICLES (Creating a vortex feel) -->
+  <g class="orbit-1 star" opacity="0.8">
+    <circle cx="1500" cy="0" r="2.5" fill="#00f5d4" />
+    <circle cx="1600" cy="200" r="3" fill="#ff9e00" />
+    <circle cx="1350" cy="50" r="2" />
+    <circle cx="1650" cy="150" r="1.5" />
+    <circle cx="1400" cy="250" r="2" fill="#9d4edd" />
+    <circle cx="1700" cy="-50" r="3" />
+  </g>
+  
+  <g class="orbit-2 star" opacity="0.9">
+    <circle cx="1500" cy="250" r="3" fill="#ff4500" />
+    <circle cx="1400" cy="-50" r="2" fill="#90e0ef" />
+    <circle cx="1650" cy="50" r="4" />
+    <circle cx="1300" cy="150" r="2.5" />
+    <circle cx="1750" cy="100" r="1" />
+    <circle cx="1200" cy="100" r="2" fill="#ffaa00" />
+  </g>
+
+  <g class="orbit-3 star" opacity="0.7">
+    <circle cx="800" cy="-50" r="2" />
+    <circle cx="900" cy="150" r="3" fill="#00bbf9" />
+    <circle cx="700" cy="100" r="1.5" />
+    <circle cx="850" cy="200" r="2.5" />
+  </g>
+
+  <!-- STATIC TWINKLING BACKGROUND DUST (To fill the void) -->
+  <g class="pulse star" opacity="0.5">
+    <circle cx="100" cy="50" r="1" /><circle cx="250" cy="150" r="1.5" /><circle cx="450" cy="80" r="1" /><circle cx="650" cy="180" r="1.5" />
+    <circle cx="850" cy="40" r="1" /><circle cx="1050" cy="120" r="1.5" /><circle cx="1250" cy="70" r="1" /><circle cx="1450" cy="190" r="1.5" />
+    <circle cx="1650" cy="30" r="1" /><circle cx="1850" cy="140" r="1.5" /><circle cx="2050" cy="90" r="1" /><circle cx="2250" cy="160" r="1.5" />
+    <circle cx="2450" cy="50" r="1" /><circle cx="2650" cy="110" r="1.5" /><circle cx="2850" cy="170" r="1" /><circle cx="2950" cy="80" r="1.5" />
+  </g>
+
+  <!-- MULTI-DIRECTIONAL METEORS / COMETS -->
+  <!-- Meteor 1: Top Right to Bottom Left -->
+  <line x1="0" y1="0" x2="-150" y2="150" class="meteor1" />
+  
+  <!-- Meteor 2: Top Left to Bottom Right -->
+  <line x1="0" y1="0" x2="200" y2="100" class="meteor2" />
+  
+  <!-- Meteor 3: Steep drop from Center Top -->
+  <line x1="0" y1="0" x2="-100" y2="300" class="meteor3" />
+
+</svg>

@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+  "version": "2.0",
+  "name": "Argentina Campeón del Mundo 🏆",
+  "description": "Tema conmemorativo épico de Argentina con la franja celeste y las 3 copas doradas.",
+  "author": "Hector Daniel Ayarachi Fuentes",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "argentina-campeon-2026@hector.ayarachi"
+    }
+  },
+  "theme": {
+    "images": {
+      "theme_frame": "empty.svg",
+      "additional_backgrounds": ["argentina-text.svg", "right-side.svg", "bandera.svg"]
+    },
+    "properties": {
+      "additional_backgrounds_alignment": ["left top", "right top", "center top"],
+      "additional_backgrounds_tiling": ["no-repeat", "no-repeat", "no-repeat"]
+    },
+    "colors": {
+      "frame": "#1c1c1e",
+      "tab_background_text": "#1c1c1e",
+      "toolbar": "transparent",
+      "toolbar_text": "#1c1c1e",
+      "bookmark_text": "#1c1c1e",
+      "toolbar_field": "rgba(0, 0, 0, 0.6)",
+      "toolbar_field_text": "#ffffff",
+      "tab_line": "#F6B40E"
+    }
+  }
+}
