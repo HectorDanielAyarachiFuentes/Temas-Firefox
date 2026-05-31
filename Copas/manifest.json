@@ -1,8 +1,8 @@
 {
   "manifest_version": 2,
-  "version": "2.0",
+  "version": "2.1",
   "name": "Argentina Campeón del Mundo 🏆",
-  "description": "Tema conmemorativo épico de Argentina con la franja celeste y las 3 copas doradas.",
+  "description": "Tema conmemorativo épico de Argentina con la franja celeste y las 3 estrellas doradas.",
   "author": "Hector Daniel Ayarachi Fuentes",
   "browser_specific_settings": {
     "gecko": {
