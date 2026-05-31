@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "version": "1.0",
+  "name": "Tema Barra SVG",
+  "description": "Un hermoso tema usando tu SVG como fondo de barra.",
+  "theme": {
+    "images": {
+      "theme_frame": "empty.svg",
+      "additional_backgrounds": [ "barra.svg" ]
+    },
+    "properties": {
+      "additional_backgrounds_alignment": [ "center" ],
+      "additional_backgrounds_tiling": [ "repeat-x" ]
+    },
+    "colors": {
+      "frame": "#1a1a24",
+      "tab_background_text": "#ffffff",
+      "toolbar": "transparent",
+      "toolbar_field": "rgba(0, 0, 0, 0.4)",
+      "toolbar_field_text": "#ffffff",
+      "toolbar_text": "#ffffff",
+      "bookmark_text": "#ffffff"
+    }
+  }
+}
