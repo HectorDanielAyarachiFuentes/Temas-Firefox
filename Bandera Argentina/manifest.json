@@ -15,7 +15,7 @@
       "additional_backgrounds": ["bandera.svg"]
     },
     "properties": {
-      "additional_backgrounds_alignment": ["center top"],
+      "additional_backgrounds_alignment": ["center center"],
       "additional_backgrounds_tiling": ["no-repeat"]
     },
     "colors": {

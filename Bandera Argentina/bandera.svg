@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <svg width="4000" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.0" height="200" viewBox="0 0 4000 200">
  <rect width="4000" fill="#74acdf" height="200"/>
- <rect y="32" width="4000" fill="#fff" height="32"/>
- <g transform="translate(2000, 48) scale(0.35) translate(-400, -250)">
+ <rect y="80" width="4000" fill="#fff" height="40"/>
+ <g transform="translate(2000, 100) scale(0.27) translate(-400, -250)">
   <g>
    <animateTransform attributeName="transform" type="rotate" from="0 400 250" to="360 400 250" dur="60s" repeatCount="indefinite" />
    <g id="rays">
